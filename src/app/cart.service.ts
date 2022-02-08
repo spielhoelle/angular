@@ -26,6 +26,6 @@ export class CartService {
   }
 
   getShippingPrices() {
-    return this.http.get<{ id: number, title: string }[]>('https://jsonplaceholder.typicode.com/posts');
+    return this.http.get<{ type: string, price: number }[]>('/assets/shipping.json');
   }
 }
